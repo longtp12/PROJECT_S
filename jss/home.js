@@ -69,7 +69,7 @@ imgCarousel.innerHTML += html;
 function imgRedirect(name){
     localStorage.setItem('gameName',name)
     localStorage.setItem('listgames',JSON.stringify(games))
-    window.location.href = "file:///D:/Code/Project/detail.html"
+    window.location.href = "file:///D:/Project/detail.html"
 }
 
 
@@ -81,5 +81,5 @@ function imgRedirect(name){
 
 function searchRedirect() {
     localStorage.setItem('item',document.getElementById('item').value)
-    window.location.href = "file:///D:/Code/Project/games.html";
+    window.location.href = "file:///D:/Project/games.html";
 }

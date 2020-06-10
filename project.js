@@ -54,7 +54,7 @@ let games = [
 function detail(name){
     localStorage.setItem('gameName',name)
     localStorage.setItem('listgames',JSON.stringify(games))
-    window.location.href = "file:///D:/Code/Project/detail.html"
+    window.location.href = "file:///D:/Project/detail.html"
 }
 
 function show(){
