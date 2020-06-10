@@ -1,0 +1,87 @@
+<!DOCTYPE html>                                                                                                                                                                                                                                                                                                                                             
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+    <link rel="stylesheet" href="css/detail.css">
+
+</head>
+<body>
+
+    <div id="detail">
+       
+       <img src="" width="" alt="">
+    </div>
+
+<div class="container">
+    <div id="comments">
+            <h3>Leave a comment</h3>
+            
+            
+            <div id="contact">
+                <div>
+                <label for="name-input" class="label">Name:</label>
+                <input type="text" id="name-input"  class="input"/>
+                </div>
+
+                <div>
+                <label for="emai-input" class="label">Email:</label>
+                <input type="email"  id="email-input" class="input">
+                </div>
+
+            </div>
+            
+            <div id="comment-form">
+                <label for="comment-input" class="label">Comment:</label>
+                <textarea name="comment-input" id="input"  rows="6" class="input"></textarea>
+            
+            </div>
+
+            <div id="lower-section">
+                <div class="stars">
+                    <form action="">
+                      <input class="star star-5" value="5" id="star-5" type="radio" name="star"/>
+                      <label class="star star-5" for="star-5"></label>
+                      <input class="star star-4" value="4" id="star-4" type="radio" name="star"/>
+                      <label class="star star-4" for="star-4"></label>
+                      <input class="star star-3" value="3" id="star-3" type="radio" name="star"/>
+                      <label class="star star-3" for="star-3"></label>
+                      <input class="star star-2" value="2" id="star-2" type="radio" name="star"/>
+                      <label class="star star-2" for="star-2"></label>
+                      <input class="star star-1" value="1" id="star-1" type="radio" name="star"/>
+                      <label class="star star-1" for="star-1"></label>
+                    </form>
+                  </div>
+                <div id="submit-button">
+                    <button onclick="submit()"  type="button" class="btn btn-primary btn-lg">Submit</button>
+                </div>
+            </div>
+            
+    </div>
+</div>
+    <div class="container">
+    <div id="comment-section">
+        <h3>Comments</h3>
+
+
+
+        <ul id="comment" >
+          
+        </ul>
+    </div>
+
+
+</div>
+
+
+
+
+    <script src="jss/detail.js"></script>
+</body>
+</html>
+

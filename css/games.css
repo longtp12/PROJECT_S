@@ -1,0 +1,22 @@
+ul.navbar-nav > li > a {
+    line-height: 100px;
+}
+
+
+
+.navbar-brand {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-item{
+   text-transform: uppercase ;
+   font-size: larger; 
+}
+
+#games li{
+    display: flex;
+}
+
+
+
