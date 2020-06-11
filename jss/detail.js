@@ -9,7 +9,7 @@ console.log(game);
 
 let displayImg = document.getElementById('detail');
 
-let html =  `<img src="${game.img[0]}" alt=""></img>
+let html =  `<img src="${game.img[1]}" alt=""></img>
             <a href="${game.stores[0]}"target="_blank" rel="noopener noreferrer"><img width='100' height='auto' src="css/img/Steam_(service)-Logo.wine.png" alt=""></a>
             <a href="${game.stores[1]}"target="_blank"  rel="noopener noreferrer"><img width='100' height='auto' src="css/img/Epic_Games-Logo.wine.png" alt=""></a>
             <a href="${game.stores[2]}"target="_blank"  rel="noopener noreferrer"><img width='100' height='auto' src="css/img/Origin_(service)-Logo.wine.png" alt=""></a>
