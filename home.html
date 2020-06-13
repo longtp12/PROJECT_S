@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +13,7 @@
 
   <div>
     <nav class="navbar navbar-expand-lg navbar-dark color">
-      <a class="navbar-brand" href="home.html"><img src="css/img/101336419_2396924960608943_448448582031245312_n.png" alt="" width="100" height="auto" loading="lazy"></a>
+      <a class="navbar-brand" href="home.html"><img src="css/img/Valorant-Logo.png" alt="" width="40" height="auto" loading="lazy"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -22,13 +21,19 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="home.html">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="games.html">games</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link" href="about.html">About</a>
         </div>
       </div>
-      <form class="form-inline">
-          <input id="item" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button onclick="searchRedirect()" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
-        </form>
+      <div class="uk-navbar-right">
+        <div>
+          <div class="search-bar">
+                  <input onkeyup="searchEnter(event)" id="item"  type="search" placeholder="Search..." autofocus>
+          </div>
+        </div> 
+        <div>
+            <a onclick="searchRedirect()" uk-search-icon href="#"></a>
+          </div>   
+    </div>
     </nav>
 
   </div>
@@ -88,8 +93,7 @@
           </div>
         </div>
     </div>
-
-
+  
     <script src="jss/home.js"></script>
     <script src="uikit-3.5.3/js/uikit-icons.min.js"></script>
     <script src="uikit-3.5.3/js/uikit.min.js"></script>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detail</title>
     
+    <link rel="stylesheet" href="uikit-3.5.3/css/uikit.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
@@ -12,76 +13,165 @@
 
 </head>
 <body>
-  
-    <div id="detail">
-     
-       
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark color">
+          <a class="navbar-brand" href="home.html"><img src="css/img/Valorant-Logo.png" alt="" width="40" height="auto" loading="lazy"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="home.html">Home </a>
+                <a class="nav-item nav-link active" href="games.html">Games <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+              </div>
+          </div>
+          <div class="uk-navbar-right">
+            <div>
+              <div class="search-bar">
+                      <input onkeyup="searchEnter(event)" id="item" placeholder="Search..." autofocus>
+              </div>
+            </div> 
+            <div>
+                <a onclick="searchRedirect()" uk-search-icon href="#"></a>
+              </div>   
+        </div>
+        </nav>
+    
+      </div>
+
+    <div id="name-game" class="uk-container">
+    
     </div>
 
-<div class="container">
-    <div id="comments">
-            <h3>Leave a comment</h3>
+    <div id="cp" class="uk-container" >
+        <div class="carousel-pic">
+    
+      
+            <div id="border-carousel" class="uk-position-relative" uk-slideshow="animation: fade">
+    
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="" alt="" uk-cover>
+                    </li>
+                </ul>
             
-            
-            <div id="contact">
-                <div>
-                <label for="name-input" class="label">Name:</label>
-                <input type="text" id="name-input"  class="input"/>
+                <div id="small-carousel" class="uk-position-bottom-center uk-position-small">
+                    <ul class="uk-thumbnav">
+                        <li uk-slideshow-item="0"><a href="#"><img src="" width="100" alt=""></a></li>
+                        <li uk-slideshow-item="1"><a href="#"><img src="" width="100" alt=""></a></li>
+                        <li uk-slideshow-item="2"><a href="#"><img src="" width="100" alt=""></a></li>
+                    </ul>
                 </div>
-
-                <div>
-                <label for="emai-input" class="label">Email:</label>
-                <input type="email"  id="email-input" class="input">
-                </div>
-
-            </div>
-            
-            <div id="comment-form">
-                <label for="comment-input" class="label">Comment:</label>
-                <textarea name="comment-input" id="input"  rows="6" class="input"></textarea>
             
             </div>
-
-            <div id="lower-section">
-                <div class="stars">
-                    <form action="">
-                      <input class="star star-5" value="5" id="star-5" type="radio" name="star"/>
-                      <label class="star star-5" for="star-5"></label>
-                      <input class="star star-4" value="4" id="star-4" type="radio" name="star"/>
-                      <label class="star star-4" for="star-4"></label>
-                      <input class="star star-3" value="3" id="star-3" type="radio" name="star"/>
-                      <label class="star star-3" for="star-3"></label>
-                      <input class="star star-2" value="2" id="star-2" type="radio" name="star"/>
-                      <label class="star star-2" for="star-2"></label>
-                      <input class="star star-1" value="1" id="star-1" type="radio" name="star"/>
-                      <label class="star star-1" for="star-1"></label>
-                    </form>
-                  </div>
-                <div id="submit-button">
-                    <button onclick="submit()"  type="button" class="btn btn-primary btn-lg">Submit</button>
-                </div>
+          </div>
+          <div class="rd">
+            <div id="img-header">
+              
             </div>
-            
-    </div>
-</div>
-    <div class="container">
-    <div id="comment-section">
-        <h3>Comments</h3>
-
-
-
-        <ul id="comment" >
+            <div id="sDes">
           
-        </ul>
+          </div>
+            <div id="pub">
+            
+            </div>
+            </div>
+        </div>
+        <div   class="uk-container">
+           
+          <div id="store">
+            
+          </div>
+    
+          
+        
+        
+        </div>
+          
+        
+        
+     
+      </div> 
+     
+      <div class="uk-container">
+      <dl id="des" class="uk-description-list ">
+        
+      </dl>  
+    
+    
+    
+    <div class="container">
+     <div id="comments">
+             <h3>Leave a comment</h3>
+             
+            
+             <div id="contact">
+                 <div>
+                 <label for="name-input" class="label">Name:</label>
+                 <input onkeyup="submitEnter(event)" type="text" id="name-input"  class="input"/>
+                 </div>
+    
+                 <div>
+                 <label for="emai-input" class="label">Email:</label>
+                 <input onkeyup="submitEnter(event)" type="email"  id="email-input" class="input">
+                 </div>
+    
+             </div>
+             
+             <div id="comment-form">
+                 <label for="comment-input" class="label">Comment:</label>
+                 <textarea name="comment-input" id="input"  rows="6" class="input"></textarea>
+             
+             </div>
+    
+             <div id="lower-section">
+                 <div class="stars">
+                     <form action="">
+                       <input onkeyup="submitEnter(event)" class="star star-5" value="5" id="star-5" type="radio" name="star"/>
+                       <label class="star star-5" for="star-5"></label>
+                       <input onkeyup="submitEnter(event)" class="star star-4" value="4" id="star-4" type="radio" name="star"/>
+                       <label class="star star-4" for="star-4"></label>
+                       <input onkeyup="submitEnter(event)" class="star star-3" value="3" id="star-3" type="radio" name="star"/>
+                       <label class="star star-3" for="star-3"></label>
+                       <input onkeyup="submitEnter(event)" class="star star-2" value="2" id="star-2" type="radio" name="star"/>
+                       <label class="star star-2" for="star-2"></label>
+                       <input onkeyup="submitEnter(event)" class="star star-1" value="1" id="star-1" type="radio" name="star"/>
+                       <label class="star star-1" for="star-1"></label>
+                     </form>
+                   </div>
+                 <div id="submit-button">
+                     <button onclick="submit()"  type="button" class="btn btn-primary btn-lg">Submit</button>
+                 </div>
+             </div>
+         
+     </div>
+    </div>
+     <div class="container">
+     <div id="comment-section">
+         <h3>Comments</h3>
+    
+    
+    
+         <ul id="comment" >
+          
+         </ul>
+     </div>
+    
     </div>
 
 
-</div>
 
-
-
-
-    <script src="jss/detail.js"></script>
+<script src="uikit-3.5.3/js/uikit.min.js"></script>
+<script src="uikit-3.5.3/js/uikit-icons.min.js"></script>
+<script src="jss/detail.js"></script>
 </body>
 </html>
 
