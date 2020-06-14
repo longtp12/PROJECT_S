@@ -5,7 +5,7 @@ function searchRedirect() {
         return
     }
     localStorage.setItem('item',document.getElementById('item').value)
-    window.location.href = "file:///D:/Project/games.html";
+    window.location.href = "games.html";
 }
 
 function searchEnter(e){

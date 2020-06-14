@@ -217,7 +217,7 @@ imgSmallCarousel.innerHTML += htmlSmall;
 function imgRedirect(name){
     localStorage.setItem('gameName',name)
     localStorage.setItem('listgames',JSON.stringify(games))
-    window.location.href = "file:///D:/Project/detail.html"
+    window.location.href = "detail.html"
 }
 
 
@@ -234,7 +234,7 @@ function searchRedirect() {
         return
     }
     localStorage.setItem('item',document.getElementById('item').value)
-    window.location.href = "file:///D:/Project/games.html";
+    window.location.href = "games.html";
 }
 
 function searchEnter(e){
